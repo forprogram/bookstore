@@ -119,7 +119,7 @@ export default {
               message: '登出成功',
               duration: 1000
             });
-            this.$router.push({name: 'bookShare'});
+            this.$router.push({name: 'signin'});
           }
         }).catch((val)=> {
           console.log(val);

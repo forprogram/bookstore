@@ -30,4 +30,8 @@ exports.hasread = function *() {
 	this.body = 0;
 }
 
+exports.getOfficialMsg = function *() {
+	this.body = yield messageModel.find({type: 0});
+}
+
 

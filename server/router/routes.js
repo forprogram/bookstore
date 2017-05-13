@@ -73,6 +73,7 @@ module.exports = function (app){
 	router.post('/announce',Message.announce);
 	router.get('/getMessages',Message.getMessages);
 	router.post('/hasread',Message.hasread);
+	router.get('/getOfficialMsg',Message.getOfficialMsg);
 
 	app.use(router.routes());
 	app.use(router.allowedMethods());

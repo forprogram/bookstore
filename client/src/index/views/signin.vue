@@ -7,6 +7,7 @@
     <button @click = "signin">登录</button>
     <p>我想注册</p>
     <router-link to="/signup"><button>注册</button></router-link>
+    <a class="admin-signin" href="/admin.html">管理员登录</a>
   </div>
 </template>
 <script type="text/javascript">
@@ -97,5 +98,10 @@ export default {
 }
 #signin>button>a{
   color: #fff;
+}
+.admin-signin {
+  position: absolute;
+  right: 18px;
+  bottom: -60px;
 }
 </style>

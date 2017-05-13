@@ -30,9 +30,9 @@
       <div class="my-icon-button indexicon icon-popup"><router-link to="/outbook">分享书</router-link></div>
       <div class="my-icon-button indexicon icon-popup"><router-link to="/outclass">分享课</router-link></div>
     </palette-button>
-  <tab-item :class="{'is-selected': selected === 'notification'}" id="消息" @click.native="goTo('notification')">
+  <tab-item :class="{'is-selected': selected === 'notification'}" id="公告" @click.native="goTo('notification')">
     <img slot="icon" src="assets/images/explore.png">
-    消息
+    公告
   </tab-item>
   <tab-item :class="{'is-selected': selected === 'home'}" id="我的" @click.native="goTo('home')">
     <img slot="icon" src="assets/images/user.png">

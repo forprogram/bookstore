@@ -2,7 +2,6 @@ const userModel = require('../models/userModel.js');
 const bookModel = require('../models/bookModel.js');
 const classModel = require('../models/classModel.js');
 const orderModel = require('../models/orderModel.js');
-const adviceModel = require('../models/adviceModel.js');
 exports.admin = function *() {
 	if (this.session.user) {
   	let id = this.session.user._id;
