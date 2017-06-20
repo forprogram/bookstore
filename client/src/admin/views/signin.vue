@@ -28,7 +28,6 @@ export default {
 	methods:{
     signin() {
       this.$http.post(IP + ':2017/adminSignin',this.postdata,{credentials: true}).then(({data})=>{
-      	console.log(data);
       	switch (data) {
       		case 0:
       			Toast({
@@ -54,7 +53,7 @@ export default {
 		          iconClass: 'icon icon-success',
 		          duration: 1000
 		        });
-        		this.user = data;
+            BUS.$emit('user', data);
         		this.$router.replace({name: 'usermanage'});
       	}
 

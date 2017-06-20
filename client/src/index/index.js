@@ -29,7 +29,7 @@ Vue.use(Router);
 Vue.use(Resource);
 Vue.use(MintUI);
 window.BUS = new Vue();
-window.IP = 'http://192.168.0.16';
+window.IP = 'http://192.168.0.20';
 Vue.config.devtools = true;
 const router = new Router({
   routes: [

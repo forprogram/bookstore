@@ -17,9 +17,6 @@
 				<li :class="{'selected': $route.name === 'announce'}">
 					<router-link to="/announce">发布公告</router-link>
 				</li>
-				<li :class="{'selected': $route.name === 'advice'}">
-					<router-link to="/advice">反馈及建议</router-link>
-				</li>
 			</ul>
 		</nav>
 
@@ -45,7 +42,7 @@ ul,li{
 }
 ul{
 	width: 100px;
-	height: 250px;
+	height: 200px;
 	margin:0;
 	padding:0;
 	display: flex;

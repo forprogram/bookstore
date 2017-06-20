@@ -60,6 +60,9 @@ export default {
     'my-nav':myNav
   },
   created() {
+    BUS.$on('user', (data) => {
+      this.userData = data;
+    });
     if (this.$route.name !== 'signin') {
       this.getUserData();
     }

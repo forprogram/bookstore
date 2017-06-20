@@ -4,7 +4,7 @@
 		<td>{{book.title}} {{book.subtitle}}</td>
 		<td>{{book.author}}</td>
 		<td>{{book.publisher}}</td>
-		<td>{{book.type}}</td>
+		<td>{{book.type==1 ? '被下单' : (book.type==0? '正常' : '已被下架')}}</td>
 		<td>{{book.sharePrice}}</td>
 		<td>
 			<button @click="showIndex = !showIndex">查看详细信息</button>
